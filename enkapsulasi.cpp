@@ -2,5 +2,27 @@
 using namespace std;
 
 class remoteLampu{
-    private:
+private:
+    string saklarNo[10];
+public:
+    void setSaklarNo(int i, string value){
+        saklarNo[i] = value;
+    }
+    string getSaklarNo(int i){
+        return saklarNo[1];
+    }
 };
+
+int main(){
+    remoteLampu LampuRumah;
+
+    LampuRumah.setSaklarNo(0, "Lampu Teras Rumah");
+    LampuRumah.setSaklarNo(1, "Lampu Ruang Tamu");
+    LampuRumah.setSaklarNo(2, "Lampu Kamar Tidur");
+    LampuRumah.setSaklarNo(3, "Lampu Dapur");
+
+    cout << LampuRumah.getSaklarNo(0) << endl;
+    cout << LampuRumah.getSaklarNo(1) << endl;
+    cout << LampuRumah.getSaklarNo(2) << endl;
+    cout << LampuRumah.getSaklarNo(3) << endl;
+}
