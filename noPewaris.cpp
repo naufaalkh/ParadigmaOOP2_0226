@@ -8,3 +8,7 @@ class baseClass final{
     }
 };
 
+class deriveredClass : public baseClass {
+    public:
+    
+};
