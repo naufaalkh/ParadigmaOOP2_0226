@@ -9,7 +9,7 @@ public:
         saklarNo[i] = value;
     }
     string getSaklarNo(int i){
-        return saklarNo[1];
+        return saklarNo[i];
     }
 };
 
